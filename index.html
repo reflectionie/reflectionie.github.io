@@ -11,15 +11,24 @@ title: {{ site.name }}
     {% endfor %}
   </ul>
 </div> -->
-<!-- <audio controls>
-  <source src="/standard/0/0_a.mp3" type="audio/mp3">
-</audio>
-<audio controls>
-  <source src="/standard/0/0_a.mp3" type="audio/mp3">
-</audio>
-<audio controls>
-  <source src="/standard/0/0_a.mp3" type="audio/mp3">
-</audio> -->
+
+<head>
+  <style>
+    .image-container {
+      display: flex;
+    }
+    
+    .image {
+      flex: 1;
+      text-align: center;
+      margin-right: 20px; 
+    }
+    
+    .image:last-child {
+      margin-right: 0; 
+    }
+  </style>
+</head>
 
 <h2>1. Experimental Results (Standard)<a name="exp result"></a></h2>
 
@@ -186,24 +195,45 @@ title: {{ site.name }}
       <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/9/9_b.mp3"></audio></td>
       <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/9/9_a.mp3"></audio></td>
     </tr>
+
     </tbody>
-    <h2>3. Visualization of synthesized waveform. (Standard)<a name="exp result"></a></h2>
+   
+</table>
+
+<h2>3. Visualization of synthesized waveform. (Standard)<a name="exp result"></a></h2>
 <body>
   <div class="image-container">
     <div class="image">
-      <img src="/Fig/mels/GT8.png" alt="Image 1">
-      <h3>Title 1</h3>
+      <img src="/Fig/mels/GT8.png" alt="GT">
+      <h3>GT</h3>
     </div>
     <div class="image">
-      <img src="/Fig/mels/diffmel8.png" alt="Image 2">
-      <h3>Title 2</h3>
+      <img src="/Fig/mels/diffmel8.png" alt="Diffsinger">
+      <h3>Diffsinger</h3>
     </div>
     <div class="image">
-      <img src="/Fig/mels/Poissonmel8.png" alt="Image 3">
-      <h3>Title 3</h3>
+      <img src="/Fig/mels/Poissonmel8.png" alt="PoissonSinger">
+      <h3>PoissonSinger</h3>
     </div>
   </div>
 </body>
+
+<table>
+  <tbody>
+    <tr>
+        <!-- <td style="text-align: center; width: 100px;" rowspan=1><strong>model<strong></td> -->
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>GT<strong></td>
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>Diffsinger 44k<strong></td>
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>PoissionSinger 44k<strong></td>
+    </tr>
+
+    <tr>
+        <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+        <td style="text-align: center"><audio style="width: 245px;" controls="" preload="none" src="standard/8/8_gt.mp3"></audio></td>
+        <td style="text-align: center"><audio style="width: 245px;" controls="" preload="none" src="standard/8/8_b.mp3"></audio></td>
+        <td style="text-align: center"><audio style="width: 245px;" controls="" preload="none" src="standard/8/8_a.mp3"></audio></td>
+    </tr>
+  </tbody>
 </table>
 
 
