@@ -3,11 +3,192 @@ layout: default
 title: {{ site.name }}
 ---
 
-<div id="home">
+<!-- <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
+</div> -->
+<!-- <audio controls>
+  <source src="/standard/0/0_a.mp3" type="audio/mp3">
+</audio>
+<audio controls>
+  <source src="/standard/0/0_a.mp3" type="audio/mp3">
+</audio>
+<audio controls>
+  <source src="/standard/0/0_a.mp3" type="audio/mp3">
+</audio> -->
+
+<h2>1. Experimental Results (Small)<a name="exp result"></a></h2>
+
+<table>
+  <tbody>
+    <tr>
+        <!-- <td style="text-align: center; width: 100px;" rowspan=1><strong>model<strong></td> -->
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>GT<strong></td>
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>Diffsinger 44k <br> (NFE = 100)<strong></td>
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>PoissionSinger 44k <br> (NFE = 35)<strong></td>
+    </tr>
+
+    <tr>
+        <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+        <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/0/0_gt.mp3"></audio></td>
+        <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/0/0_b.mp3"></audio></td>
+        <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/0/0_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/1/1_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/1/1_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/1/1_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/2/2_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/2/2_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/2/2_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/3/3_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/3/3_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/3/3_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/4/4_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/4/4_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/4/4_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/5/5_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/5/5_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/5/5_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/6/6_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/6/6_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/6/6_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/7/7_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/7/7_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/7/7_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/8/8_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/8/8_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/8/8_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/9/9_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/9/9_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="standard/9/9_a.mp3"></audio></td>
+    </tr>
+   
+
+    </tbody>
+</table>
+
+<h2>2. Experimental Results (Large)<a name="exp result"></a></h2>
+
+<table>
+  <tbody>
+    <tr>
+        <!-- <td style="text-align: center; width: 100px;" rowspan=1><strong>model<strong></td> -->
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>GT<strong></td>
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>Diffsinger 44k<strong></td>
+        <td style="text-align: center; width: 150px;" rowspan=1><strong>PoissionSinger 44k<strong></td>
+    </tr>
+
+    <tr>
+        <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+        <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/0/0_gt.mp3"></audio></td>
+        <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/0/0_b.mp3"></audio></td>
+        <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/0/0_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/1/1_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/1/1_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/1/1_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/2/2_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/2/2_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/2/2_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/3/3_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/3/3_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/3/3_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/4/4_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/4/4_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/4/4_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/5/5_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/5/5_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/5/5_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/6/6_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/6/6_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/6/6_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/7/7_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/7/7_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/7/7_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/8/8_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/8/8_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/8/8_a.mp3"></audio></td>
+    </tr>
+
+    <tr>
+      <!-- <td style="text-align: center; width: 150px;" rowspan=1><strong>2044001628<strong></td> -->
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/9/9_gt.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/9/9_b.mp3"></audio></td>
+      <td style="text-align: center"><audio style="width: 240px;" controls="" preload="none" src="large/9/9_a.mp3"></audio></td>
+    </tr>
+   
+
+    </tbody>
+</table>
+
+
