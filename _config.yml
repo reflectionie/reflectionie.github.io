@@ -1,6 +1,6 @@
 # Setup
 title:        
-tagline:     "Poissonsinger: Singing Voice Synthesis with Poisson Flow Model"
+tagline:     "PoissonSinger: Singing Voice Synthesis with Poisson Flow Model"
 baseurl:      ""
 paginate:     1
 locale:       "en"
@@ -8,7 +8,7 @@ locale:       "en"
 # About/contact
 author:
   name:       Author name
-  url:        http://yourhomepage.com 
+  # url:        http://yourhomepage.com 
 
 # Gems
 gems:
